@@ -11,12 +11,38 @@ ApplicationWindow {
 
     width: 200
     height: 200
+    ColumnLayout{
+	   spacing: 10
+ 
 
+	    Rectangle {
+	    	height: 20
+	    	RowLayout {
+	    		spacing: 5
 
-     CheckBox {
-        text: "connected"
-        checked: true
-        id: mybutton
-    }
+	    		Label {
+		    		text: "AAPL"
+		    		font.pixelSize: 22
+		    	}
+		    	Label {
+		    		text: "$100"
+		    	}
+	    	}
+	    }
 
+	    Rectangle {
+	    	height: 20
+	    	RowLayout {
+	    		spacing: 5
+
+	    		Label {
+		    		text: "GOOG"
+		    		font.pixelSize: 22
+		    	}
+		    	Label {
+		    		text: "$100"
+		    	}
+	    	}
+	    }
+	}	
 }
